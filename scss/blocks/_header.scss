@@ -1,1 +1,38 @@
 // bu yerda header bor
+.header {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background: #FFFFFF;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-link {
+    text-decoration: none;
+    flex-shrink: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/hamburger.png);
+    width: 20px;
+    height: 16px;
+    background-size: contain;
+  }
+
+}
