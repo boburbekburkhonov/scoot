@@ -659,7 +659,6 @@ img {
   padding-top: 153px;
   padding-bottom: 153px;
   background-image: url(../images/bitmap.png);
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1540px 650px;
@@ -716,7 +715,6 @@ img {
     padding-top: 137px;
     padding-bottom: 217px;
     background-image: url(../images/bitmap-tablet.png);
-    background-size: contain;
     background-position: center;
     background-size: 768px 650px;
   }
@@ -800,6 +798,126 @@ img {
 @media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 375px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 375px) and (min-device-pixel-ratio: 2), only screen and (max-width: 375px) and (min-resolution: 192dpi), only screen and (max-width: 375px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/bitmap-mobile@2x.png);
+  }
+}
+
+.services {
+  padding-top: 160px;
+  background-image: url(../images/line.png);
+  background-repeat: no-repeat;
+  background-size: 974px 15px;
+  background-position: calc(50% + -270px);
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  max-width: 350px;
+}
+
+.services__item + .services__item {
+  margin-left: 30px;
+}
+
+.services__desc {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 27px;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.services__desc-small {
+  margin: 0;
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media only screen and (max-width: 1024px) {
+  .services {
+    background-position: top  210px left;
+    background-size: 734px 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services {
+    padding-top: 122px;
+    background-image: none;
+    background-image: url(../images/line-tablet.png);
+    background-size: contain;
+    background-position: top left 50px;
+  }
+  .services__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 573px;
+  }
+  .services__item {
+    max-width: 573px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__item > picture {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 80px;
+  }
+  .services__item + .services__item {
+    margin-left: 0;
+  }
+  .services__desc {
+    max-width: 398px;
+  }
+  .services__desc-small {
+    max-width: 398px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .services {
+    padding-top: 120px;
+    background-image: none;
+  }
+  .services__item {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__item + .services__item {
+    margin-top: 48px;
+  }
+  .services__item > picture {
+    margin: 0 auto;
+  }
+  .services__desc {
+    max-width: 311px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .services__desc-small {
+    max-width: 311px;
   }
 }
 /*# sourceMappingURL=main.css.map */

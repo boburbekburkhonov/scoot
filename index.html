@@ -14,7 +14,7 @@
             <a class="header__logo-link" href="#">
                 <img src="./images/logo.svg" alt="scoot" width="108" height="28">
             </a>
-
+            <!-- SITENAV -->
             <nav class="sitenav">
                 <ul class="sitenav__list">
                     <li class="sitenav__item">
@@ -38,6 +38,7 @@
     </header>
     <!-- MAIN -->
     <main class="main">
+        <!-- HERO -->
         <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__heading">
@@ -49,6 +50,59 @@
                 </p>
 
                 <a class="button hero__button" href="#">Get Scootin</a>
+            </div>
+        </section>
+        <!-- SERVICES -->
+        <section class="services">
+            <div class="container">
+                <h2 class="visually-hidden">Services</h2>
+
+                <ul class="services__list">
+                    <li class="services__item">
+                        <picture>
+                            <source media="(max-width: 375px)" srcset="./images/apps-mobile.png">
+
+                            <img src="./images/apps.png" alt="apps">
+                        </picture>
+
+                       <div class="services__desc-wrapper">
+                        <p class="services__desc">Locate with app</p>
+                        <p class="services__desc-small">
+                            Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+                        </p>
+                       </div>
+                    </li>
+
+                    <li class="services__item">
+                        <picture>
+                            <source media="(max-width: 375px)" srcset="./images/scoter-mobile.png">
+
+                            <img src="./images/scoter.png" alt="apps">
+                        </picture>
+
+                        <div class="services__desc-wrapper">
+                            <p class="services__desc">Pick your scooter</p>
+                            <p class="services__desc-small">
+                                We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost..
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="services__item">
+                        <picture>
+                            <source media="(max-width: 375px)" srcset="./images/ride-mobile.png">
+
+                            <img src="./images/ride.png" alt="apps">
+                        </picture>
+
+                        <div class="services__desc-wrapper">
+                            <p class="services__desc">Enjoy the ride</p>
+                            <p class="services__desc-small">
+                                Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

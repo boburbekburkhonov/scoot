@@ -1,0 +1,128 @@
+.services {
+  padding-top: 160px;
+  background-image: url(../images/line.png);
+  background-repeat: no-repeat;
+  background-size: 974px 15px;
+  background-position: calc(50% + -270px);
+
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    max-width: 350px;
+
+    & + & {
+      margin-left: 30px;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 27px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+
+    &-small {
+      margin: 0;
+      font-family: 'Lexend Deca';
+      font-size: 15px;
+      line-height: 25px;
+      color: #939CAA;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .services {
+    background-position: top  210px left;
+    background-size: 734px 15px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .services {
+    padding-top: 122px;
+    background-image: none;
+    background-image: url(../images/line-tablet.png);
+    background-size: contain;
+    background-position: top left 50px;
+
+    &__list {
+      flex-direction: column;
+      max-width: 573px;
+    }
+
+    &__item {
+      max-width: 573px;
+      display: flex;
+      align-items: center;
+
+
+      & > picture {
+        flex-shrink: 0;
+        margin-right: 80px;
+      }
+
+      & + & {
+        margin-left: 0;
+      }
+    }
+
+    &__desc {
+      max-width: 398px;
+
+      &-small {
+        max-width: 398px;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  .services {
+    padding-top: 120px;
+    background-image: none;
+
+      &__item {
+        text-align: center;
+        flex-direction: column;
+
+        & + & {
+          margin-top: 48px;
+        }
+
+        & > picture {
+          margin: 0 auto;
+        }
+      }
+
+      &__desc {
+        max-width: 311px;
+        font-size: 20px;
+        line-height: 28px;
+
+        &-small {
+          max-width: 311px;
+        }
+      }
+
+    }
+
+  }
