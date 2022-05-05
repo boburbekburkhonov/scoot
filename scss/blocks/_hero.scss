@@ -1,5 +1,13 @@
 // bu yerda hero bor
 .hero {
+  padding-top: 153px;
+  padding-bottom: 153px;
+  background-image: url(../images/bitmap.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1540px 650px;
+
 
   &__heading {
     max-width: 500px;
@@ -10,18 +18,178 @@
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -2.5px;
-    color: black;
+    color: #FFFFFF;
+
   }
 
   &__desc {
-    max-width: 405px;
+    padding-left: 57px;
+    max-width: 410px;
     margin: 0;
     margin-bottom: 40px;
     font-family: 'Lexend Deca';
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-    color: black;
+    color: #FFFFFF;
+  }
+
+  &__button {
+    margin-left: 57px;
+  }
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url(../images/bitmap@2x.png);
+  }
+
+}
+
+@media only screen and (max-width: 895px) {
+
+  .hero {
+    background-position: center right -405px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .hero {
+    background-position: center right -450px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hero {
+    padding-top: 137px;
+    padding-bottom: 217px;
+    background-image: url(../images/bitmap-tablet.png);
+    background-size: contain;
+    background-position: center;
+    background-size: 768px 650px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {
+      max-width: 573px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    &__desc {
+      max-width: 573px;
+      text-align: center;
+      margin-bottom: 32px;
+      padding-left: 0px;
+    }
+
+    &__button {
+      margin-left: 0px;
+    }
+
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+    .hero {
+      background-image: url(../images/bitmap-tablet@2x.png);
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 517px) {
+
+  .hero {
+    padding-top: 100px;
+
+    &__heading {
+      font-size: 50px;
+      max-width: 500px;
+    }
+
+    &__desc {
+      max-width: 500px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 461px) {
+
+  .hero {
+    padding-top: 70px;
+
+    &__heading {
+      font-size: 45px;
+      max-width: 400px;
+    }
+
+    &__desc {
+      max-width: 500px;
+      font-size: 13px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  .hero {
+    background-image: url(../images/bitmap-mobile.png);
+    background-size: 375px 650px;
+
+
+    &__heading {
+      max-width: 311px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__desc {
+      max-width: 311px;
+    }
+
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+    .hero {
+      background-image: url(../images/bitmap-mobile@2x.png);
+    }
+
   }
 
 }

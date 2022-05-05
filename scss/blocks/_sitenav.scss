@@ -123,6 +123,7 @@
 @media only screen and (max-width: 590px) {
 
   .header {
+    position: relative;
 
     &__hamburger {
       display: inline-block;
@@ -136,7 +137,6 @@
   }
 
   .sitenav {
-    position: relative;
     display: none;
 
     &__item + &__item {
@@ -162,7 +162,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 8%;
+    top: 100%;
     left: 0;
     width: 75%;
     background: #333A44;
