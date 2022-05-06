@@ -1,0 +1,152 @@
+.footer__bottom {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background: #333A44;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    flex-shrink: 0;
+    text-decoration: none;
+    margin-right: 58px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  &-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+
+    & + & {
+      margin-left: 32px;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $footer-bottom-link;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: $footer-bottom-link-active;
+    }
+  }
+
+  .footer__bottom-sites {
+
+    &-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item-active {
+      margin-left: 24px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $footer-bottom-sites-link;
+
+      &:hover {
+        color: $footer-bottom-sites-link-hover;
+      }
+
+      &:active {
+        opacity: 0.4;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+  .footer__bottom {
+
+    &-logo {
+      margin-right: 28px;
+    }
+
+    &-item + &-item {
+      margin-left: 22px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+
+  .footer__bottom {
+
+    &-container {
+      flex-direction: column;
+    }
+
+    &-left {
+      flex-direction: column;
+    }
+
+    &-logo {
+      margin-bottom: 41px;
+    }
+
+    &-list {
+      text-align: center;
+      margin-bottom: 85px;
+    }
+
+    &-item + &-item {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+
+    &-list {
+      flex-direction: column;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  .footer__bottom {
+    padding-top: 64px;
+    padding-bottom: 88px;
+  }
+
+}

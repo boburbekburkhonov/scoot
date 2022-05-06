@@ -6,23 +6,22 @@
   display: inline-block;
   text-decoration: none;
   padding: 14px 40px;
-  background: #FCB72B;
+  background: $button-background;
   border: 3px solid transparent;
   font-family: 'Space Mono';
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
-  // white-space: nowrap;
+  color: $button-color;
 
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
-    background-color: white;
-    border: 3px solid #FCB72B;
-    color: #FCB72B;
+    background-color: $button-active-background-color;
+    border: 3px solid $button-active-border-color;
+    color: $button-active-color;
   }
 }

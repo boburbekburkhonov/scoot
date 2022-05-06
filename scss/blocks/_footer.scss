@@ -1,1 +1,22 @@
 // bu yerda footer bor
+
+.footer {
+  padding-top: 200px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .footer {
+    padding-top: 104px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  .footer {
+    padding-top: 120px;
+  }
+
+}

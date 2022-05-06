@@ -42,7 +42,7 @@
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.14286px;
-    color: #495567;
+    color: $information-heading;
   }
 
   &__desc {
@@ -51,7 +51,7 @@
     font-family: 'Lexend Deca';
     font-size: 15px;
     line-height: 25px;
-    color: #939CAA;
+    color: $information-desc;
   }
 
 }

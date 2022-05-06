@@ -3,7 +3,6 @@
   padding-top: 153px;
   padding-bottom: 153px;
   background-image: url(../images/bitmap.png);
-  // background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1540px 650px;
@@ -18,20 +17,19 @@
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -2.5px;
-    color: #FFFFFF;
-
+    color: $hero-heading;
   }
 
   &__desc {
     padding-left: 57px;
-    max-width: 410px;
+    max-width: 480px;
     margin: 0;
     margin-bottom: 40px;
     font-family: 'Lexend Deca';
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: $hero-desc;
   }
 
   &__button {
@@ -76,7 +74,6 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 137px;
     padding-bottom: 217px;
     background-image: url(../images/bitmap-tablet.png);
-    // background-size: contain;
     background-position: center;
     background-size: 768px 650px;
 
