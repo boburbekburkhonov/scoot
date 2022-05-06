@@ -1,0 +1,171 @@
+.information {
+  padding-top: 200px;
+  background-image: url(../images/information-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top 182px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    & > picture {
+      flex-shrink: 0;
+      z-index: -10;
+    }
+
+    & + & {
+      margin-top: 120px;
+    }
+  }
+
+  &__left {
+    max-width: 445px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+
+}
+
+@media only screen and (max-width: 1390px) {
+
+  .information {
+    background-position: center top 210px;
+
+
+  }
+
+}
+
+@media only screen and (max-width: 1290px) {
+
+  .information {
+    background-position: center top 260px;
+
+
+  }
+
+}
+
+@media only screen and (max-width: 1070px) {
+
+  .information {
+    background-position: center top 290px;
+
+
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .information {
+    background-position: center top 290px;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .information {
+    padding-top: 145px;
+    background-image: none;
+    background-image: url(../images/information-background-tablet.png);
+    // background-size: contain;
+    background-position: center top 160px;
+
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      & > picture {
+        order: -1;
+      }
+
+      &:nth-child(2) {
+        flex-direction: column;
+      }
+    }
+
+    &__left{
+      margin-top: 56px;
+    }
+
+    &__heading {
+      margin-bottom: 40px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 688px) {
+
+  .information {
+    background-position: center top 200px;
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  .information {
+    padding-top: 120px;
+    background-image: none;
+    background-image: url(../images/inforamtion-background-mobile.png);
+    background-position: center top 290px;
+
+    &__heading {
+      font-size: 32px;
+      line-height: 32px;
+      max-width: 311px;
+    }
+
+    &__desc {
+      max-width: 311px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  .information {
+    background-position: center top 280px;
+
+  }
+
+}
