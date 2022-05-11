@@ -179,6 +179,17 @@
     height: 18px;
   }
 
+  .header--open .header__bg {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 25%;
+    height: 605px;
+    background-color: #000;
+    opacity: 0.75;
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
